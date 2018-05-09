@@ -27,7 +27,8 @@ function polarToCartesian(r, angle){
 function setup()
 {
 	
-	createCanvas(600, 500);
+	var myCanvas = createCanvas(600, 500);
+	myCanvas.parent('myContainer');
 	//load video
 	vid = createVideo("assets/healing.mp4");
 	vid.hide();

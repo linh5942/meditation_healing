@@ -22,12 +22,15 @@ body {
 
 div {
 	width = device-width;
-	padding-top: 2%;
-	padding-bottom: 2%;
 	margin: 5%;
     text-align: center;
 }
 
+#myContainer{
+	width = device-width;
+	margin: 0%;
+    text-align: center;
+}
 
 h1 {
     color: rgb(251,253,251);
@@ -38,29 +41,41 @@ h1 {
     font-size: 25px;
 }
 
-@media(max-width:768px){
-	div {
-	width = device-width;
-	padding-top: 10%;
-	padding-bottom: 10%;
-	margin: auto;
-    text-align: center;
-	}
-
-	
-
-}
-
 body {
   margin: 5%;
   display: flex;
 
   /* This centers our sketch horizontally. */
-  justify-content: center;
+ /* justify-content: center;*/
 
   /* This centers our sketch vertically. */
-  align-items: center;
+  /*align-items: center;*/
 }
+
+@media(max-width:768px){
+	div {
+	width = width = device-width;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin: auto;
+	align-content: center;
+	}
+
+	#myContainer{
+	width = device-width;
+	margin: 0%;
+    text-align: center;
+}
+
+	body {
+  	margin: 0%;
+  	display: flex;
+  }
+
+
+
+}
+
 
 
 
@@ -72,11 +87,14 @@ body {
 
 <body>
 
+	<div>
 		<div>
 		<h1>Thanks for your interest. </h1>
 		<h1>We will contact you later.</h1>
-		
 		<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=https://linh5942.github.io/meditation_healing/doing.html&digit=style/plain/31/&reloads=0" alt="seo" title="seo" border="0"></a><br /><a href="http://reliablecounter.com/seo-agency" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">seo</a>
+		</div>
+		
+		<div id='myContainer'></div>
 
 	
 	</div>
